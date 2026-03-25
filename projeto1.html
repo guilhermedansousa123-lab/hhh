@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Street</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="logocarro1.png">
+</head>
+<body class="bg-black text-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger">
+  <div class="container">
+    <a class="navbar-brand text-danger fw-bold" href="projeto1.html">
+      <img src="logocarro1.png" height="170"> 
+    </a>
+    <button class="navbar-toggler border-danger" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-danger" href="pedrocarro.html">|   Carro   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedromoto.html">|   Moto   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedrocaminhonete.html">|   Caminhonete   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedrocaminhao.html">|   Caminhão   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedroaquatico.html">|   Aquático   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedroaerio.html">|   Aérios    |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedroterrestre.html">|   Terrestre   |</a></li>
+        <li class="nav-item ms-3">
+          <a class="btn btn-danger" href="pedroinscrição.html">Inscrição</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="text-center d-flex align-items-center" style="height: 110vh; background: url('imagemlocal.png') center/cover no-repeat;">
+  <div class="container">
+  </div>
+</section>
+
+<footer class="text-center text-danger py-4 border-top border-danger">
+     <li class="nav-item ms-3">
+         <div class="text-center">
+  <button id="btnToggle" class="btn btn-danger">
+    Sobre a Empresa
+  </button>
+</div>
+
+<br>
+
+<h3 id="textoEmpresa" class="text-center px-4" style="display: none;">
+A Auto Street é uma empresa criada em 2026 por Pedro Edilberto e Guilherme De Danieli, com o objetivo de revolucionar o mercado de automóveis. Desde o início, a empresa se destacou por seu compromisso em oferecer uma grande variedade de veículos, atendendo diferentes perfis de clientes, gostos e condições financeiras.
+
+Com o princípio de tornar o acesso aos automóveis mais democrático, a Auto Street trabalha com carros de todos os tipos e preços, desde modelos mais acessíveis até veículos de alto padrão, incluindo esportivos e utilitários. A proposta da empresa é garantir que qualquer pessoa possa encontrar o carro ideal, independentemente do seu orçamento ou estilo de vida.
+
+Além da diversidade de opções, a Auto Street também se preocupa com a qualidade no atendimento, buscando sempre oferecer confiança, transparência e uma boa experiência para seus clientes. Com uma visão inovadora e empreendedora, Pedro Edilberto e Guilherme De Danieli construíram uma marca que tem potencial para crescer e se destacar cada vez mais no mercado automobilístico.
+</h3>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(function(){
+  let visivel = false; 
+  $("#btnToggle").click(function(){
+    if(!visivel){
+      $("#textoEmpresa").slideDown(800); 
+      $(this).text("Ocultar texto");
+      visivel = true;
+
+    } else {
+      $("#textoEmpresa").slideUp(800);
+      $(this).text("Sobre a Empresa");
+      visivel = false;
+    }
+  });
+});
+</script>
+</li>
+© 2026 Auto Street
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

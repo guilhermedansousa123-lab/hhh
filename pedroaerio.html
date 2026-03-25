@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auto Street</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="logocarro1.png">
+</head>
+
+<body class="bg-black text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger">
+        <div class="container">
+            <a class="navbar-brand text-danger fw-bold" href="projeto1.html">
+                <img src="logocarro1.png" height="170">
+            </a>
+            <button class="navbar-toggler border-danger" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-danger" href="projeto1.html">| Inicio |</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="pedrocarro.html">| Carro |</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="pedromoto.html">| Moto |</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="pedrocaminhonete.html">| Caminhonete
+                            |</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="pedrocaminhao.html">| Caminhão |</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="pedroaquatico.html">| Aquático |</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="pedroterrestre.html">| Terrestre |</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-danger" href="pedroinscrição.html">Inscrição</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+ </nav>
+
+    <style>
+    .card {
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: pointer;
+      border: none;}
+    .card:hover {
+      transform: scale(1.08);
+      box-shadow: 0 15px 35px rgba(255, 0, 0, 0.5);
+      z-index: 10;}
+  </style>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    .card-text {
+      display: none;
+    }
+  </style>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+.card-text{
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+
+  $(".mostrar").click(function(){
+    $(this).closest(".card").find(".card-text").show(800);
+  });
+
+  $(".ocultar").click(function(){
+    $(this).closest(".card").find(".card-text").hide(800);
+  });
+
+});
+</script>
+
+</body>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="embraer.jpg" class="card-img-top" alt="uno.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Embraer Praetor 600 2024 </h5>
+                    <p class="card-text">Desenvolvido para missões intercontinentais, o Praetor 600 combina um alcance
+                        impressionante com a capacidade de operar em pistas curtas onde outros jatos do mesmo porte não
+                        conseguem pousar. Equipado com dois motores Honeywell HTF7500E, ele entrega uma performance que
+                        o coloca no topo da categoria.</p>
+                         <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+                        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+                        <a href="https://youtu.be/xEc9L-TqA2M"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 110.000.000,00 </a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="global.webp" class="card-img-top" alt="celta.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Global 7500 2023 </h5>
+                    <p class="card-text">Projetado para conectar as cidades mais distantes do mundo sem escalas, o
+                        Global 7500 2023 é famoso por ser o único jato executivo construído com quatro zonas habitáveis
+                        distintas. Equipado com motores GE Passport, ele oferece um alcance líder de 14.260 km (7.700
+                        milhas náuticas) e pode voar a Mach 0.925.</p>
+                         <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+                         <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+                         <a href="https://youtu.be/6RUGo9CR_es"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 440.000.000,00 </a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="gulfistrem.webp" class="card-img-top" alt="gol">
+                <div class="card-body">
+                    <h5 class="card-title">Gulfstream G650 2022</h5>
+                    <p class="card-text">Embora a Gulfstream já tenha anunciado sucessores como o G700 e G800, o G650 (e
+                        sua versão de alcance estendido, o G650ER) continua sendo o padrão ouro de prestígio. Equipado
+                        com dois motores Rolls-Royce BR725, ele voa a uma velocidade máxima de Mach 0.925, o que
+                        significa que você chega ao seu destino mais rápido do que em quase qualquer outra aeronave
+                        civil.</p>
+                         <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+                         <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+                         <a href="https://youtu.be/Q7A82u0nxRw"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 325.000.000,00 </a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="h145.jpg" class="card-img-top" alt="uno.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">H145 2023 </h5>
+                    <p class="card-text">A versão 2023 traz como padrão o inovador rotor de cinco pás, que aumentou a
+                        capacidade de carga e transformou a experiência de voo, tornando-a muito mais suave. Equipado
+                        com dois motores Safran Arriel 2E, ele oferece uma performance excepcional, especialmente em
+                        condições de calor e altitude.</p>
+                         <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+                         <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+                         <a href="https://youtu.be/lz7lYOtO-94"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 75.000.000,00 </a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="bell.webp" class="card-img-top" alt="celta.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Bell 429 2022</h5>
+                    <p class="card-text">Diferente de muitos concorrentes que adaptaram designs antigos, o Bell 429 foi
+                        projetado do zero para oferecer uma cabine modular e um desempenho de categoria A (capaz de
+                        decolar com apenas um motor em caso de falha). Equipado com dois motores Pratt & Whitney
+                        PW207D1, ele combina força com uma das manutenções mais simples da categoria.</p>
+                         <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+                         <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+                         <a href="https://youtu.be/pFCwdvht9PE"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 35.000.000,00 </a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="bimotor">
+                <div class="card h-100">
+                    <img src="ronbison.webp" class="card-img-top" alt="gol">
+                    <div class="card-body">
+                        <h5 class="card-title">Robinson R44 2023</h5>
+                        <p class="card-text">Diferente dos modelos biturbina que vimos antes, o R44 2023 utiliza um
+                            motor a pistão Lycoming IO-540 com injeção eletrônica, o que o torna muito mais acessível
+                            tanto na compra quanto na manutenção. É uma máquina ágil, fácil de pilotar e extremamente
+                            confiável.</p>
+                             <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+                             <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+                             <a href="https://youtu.be/YneZ0j8lbVc"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">
+                            <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 5.700.000,00 </a>
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="ipanema.webp" class="card-img-top" alt="uno.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Embraer EMB-203 Ipanema 2023 </h5>
+                    <p class="card-text">Lançado originalmente na década de 70, o Ipanema evoluiu drasticamente. O
+                        modelo EMB-203 2023 é a versão mais moderna da série, projetada para suportar o trabalho pesado
+                        no campo com uma robustez que poucos aviões no mundo possuem. É movido pelo motor Lycoming de
+                        300 hp, movido a etanol.</p>
+                         <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+                         <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+                         <a href="https://youtu.be/_B-KA6NgisY?list=RD_B-KA6NgisY"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 4.000.000,00 </a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>

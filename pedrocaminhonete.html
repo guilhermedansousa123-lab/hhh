@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Street</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="logocarro1.png">
+</head>
+<body class="bg-black text-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger">
+  <div class="container">
+    <a class="navbar-brand text-danger fw-bold" href="projeto1.html">
+      <img src="logocarro1.png" height="170"> 
+    </a>
+    <button class="navbar-toggler border-danger" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-danger" href="projeto1.html">|   Inicio   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedrocarro.html">|   Carro   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedromoto.html">|  Moto   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedrocaminhao.html">|   Caminhão   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedroaquatico.html">|   Aquático   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedroaerio.html">|   Aérios    |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedroterrestre.html">|   Terrestre   |</a></li>
+        <li class="nav-item ms-3">
+          <a class="btn btn-danger" href="pedroinscrição.html">Inscrição</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+    .card {
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: pointer;
+      border: none;}
+    .card:hover {
+      transform: scale(1.08);
+      box-shadow: 0 15px 35px rgba(255, 0, 0, 0.5);
+      z-index: 10;}
+  </style>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    .card-text {
+      display: none;
+    }
+  </style>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+.card-text{
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+
+  $(".mostrar").click(function(){
+    $(this).closest(".card").find(".card-text").show(800);
+  });
+
+  $(".ocultar").click(function(){
+    $(this).closest(".card").find(".card-text").hide(800);
+  });
+
+});
+</script>
+
+</body>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="hilux.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Toyota Hilux 2022</h5>
+        <p class="card-text">Consolidou sua posição como a picape média mais vendida do Brasil, sendo um veículo de extrema robustez e altíssimo valor de revenda, equipado com o motor 2.8 Diesel (204 cv e 50,9 kgfm) ou o motor 2.7 Flex (163 cv) que garantem força para o trabalho e conforto para o lazer.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/uhgPgv7CkcY"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 240.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="ford.webp" class="card-img-top" alt="celta.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Ford Ranger 2023</h5>
+        <p class="card-text">Marcou a despedida da sua consagrada geração atual com foco total em tecnologia e performance, sendo uma picape de dirigibilidade superior e robustez comprovada, equipada com o motor 2.2 Diesel (160 cv) ou o potente 3.2 de 5 cilindros (200 cv) que garante torque de sobra para o off-road.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/h_s-nWTkw-I"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 230.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="s10.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Chevrolet S10 2022</h5>
+        <p class="card-text">Reafirmou sua tradição como uma das picapes mais confiáveis do agronegócio brasileiro, sendo um utilitário de robustez mecânica e excelente conectividade com Wi-Fi nativo, equipado com o motor 2.8 Turbo Diesel (200 cv e 51 kgfm) ou o 2.5 Flex (204 cv) que garantem força bruta e bom desempenho em ultrapassagens.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/sGGmMPH8bPs"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 235.000,00 </a>
+       </small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="ford americana.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ford super duty 2021</h5>
+        <p class="card-text">Consolidou sua posição como a picape de capacidade extrema e força bruta nos EUA, sendo um utilitário de porte gigantesco e chassi de aço de alta resistência, equipado com o colossal motor 6.7 Power Stroke V8 Diesel (475 cv e surreais 145 kgfm de torque) ou o 7.3 V8 a gasolina ("Godzilla").</p>
+         <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/3qFYbVn2pDc"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 800.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="ram.webp" class="card-img-top" alt="celta.jpg">
+      <div class="card-body">
+        <h5 class="card-title">RAM 2500 Night Edition 2021 </h5>
+        <p class="card-text">Consolidou sua posição como a picape mais imponente do Brasil, sendo um utilitário de luxo colossal e visual "all-black" exclusivo, equipada com o brutal motor 6.7 Cummins Turbo Diesel (365 cv e 110 kgfm) que garante força bruta para rebocar até 7,8 toneladas.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/ofOAQgbt3BE"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 410.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="amarok.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Volkswagen Amarok 2021</h5>
+        <p class="card-text"> Consolidou sua fama de "picape com dirigibilidade de SUV", sendo o utilitário de maior performance da categoria e referência em estabilidade, equipada com o brutal motor 3.0 V6 Turbo Diesel (258 cv e 59,1 kgfm) que garante acelerações de esportivo em qualquer terreno.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/s0ln4Hjb9uQ"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 220.000,00 </a>
+       </small>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<br>
+<br>
+
+ <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="f 250.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">F 250 2008</h5>
+        <p class="card-text">Consolidou sua fama de "rainha do asfalto e do campo" no Brasil, sendo uma picape de robustez bruta e chassi de caminhão leve, equipada com o lendário motor 3.9 Cummins Turbo Diesel (203 cv e 56 kgfm) que garante força descomunal para carga e reboque.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://www.youtube.com/shorts/HwYbFc0QLYM?feature=share"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 170.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="f 1000.jpg" class="card-img-top" alt="celta.jpg">
+      <div class="card-body">
+        <h5 class="card-title">F 1000 / 1997 </h5>
+        <p class="card-text">Geração "Bolinha" marcou o auge das picapes clássicas no Brasil, sendo um veículo de extrema robustez e mecânica "eterna", equipada com o lendário motor 3.9 MWM Turbo Diesel (122 cv e 37 kgfm) que garante força bruta para o trabalho pesado e alta confiabilidade</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/bxTg1nAsXYc"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 130.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="strada.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Fiat Strada 2024 </h5>
+        <p class="card-text"> Consolidou sua liderança absoluta como o veículo mais vendido do Brasil, sendo uma picape de versatilidade imbatível e suspensão traseira com feixe de molas (eixo rígido), equipada com o eficiente motor 1.3 Firefly (107 cv) ou o moderno 1.0 Turbo Flex (130 cv) que garante agilidade inédita na categoria.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/arjdRdygSZs"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 120.000,00 </a>
+       </small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+ <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="saveiro.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Volkswagen Saveiro 2021</h5>
+        <p class="card-text">Consolidou sua fama como a "queridinha do serviço urbano e do lazer" no Brasil, sendo uma picape leve de agilidade urbana e mecânica confiável, equipada com o motor 1.6 MSI (até 120 cv e 16,8 kgfm) que garante o equilíbrio ideal entre economia para o dia a dia e força para pequenas cargas.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/8LMPK75Ymz4"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 75.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="montana.webp" class="card-img-top" alt="celta.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Chevrolet Montana 2022 </h5>
+        <p class="card-text">Consolidou sua fama como uma das picapes compactas mais objetivas e econômicas para frotas e pequenos negócios, sendo um veículo de manutenção simplificada e caçamba generosa, equipada com o motor 1.4 Econo.Flex (99 cv e 13 kgfm).</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/X9cjXrzP5Rs"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 60.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="raptor.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ford Ranger Raptor 2023 </h5>
+        <p class="card-text"> Consolidou sua fama como a "máquina de adrenalina definitiva" no Brasil, sendo uma picape de performance pura com engenharia de competição, equipada com o motor 3.0 V6 Bi-Turbo a gasolina (397 cv e 59,4 kgfm) que garante acelerações de carro esportivo, indo de 0 a 100 km/h em apenas 5,8 segundos.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/ExbHfzmdbGE"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 470.000,00 </a>
+       </small>
+      </div>
+    </div>
+  </div>
+</div>

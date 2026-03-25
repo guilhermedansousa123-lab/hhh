@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Street</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="logocarro1.png">
+</head>
+<body class="bg-black text-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger">
+  <div class="container">
+    <a class="navbar-brand text-danger fw-bold" href="projeto1.html">
+      <img src="logocarro1.png" height="170"> 
+    </a>
+    <button class="navbar-toggler border-danger" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-danger" href="projeto1.html">|   Inicio   |</a></li>
+         <li class="nav-item"><a class="nav-link text-danger" href="pedrocarro.html">|   Carro   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedromoto.html">|   Moto   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedrocaminhonete.html">|   Caminhonete   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedroaquatico.html">|   Aquático   |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedroaerio.html">|   Aérios    |</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="pedroterrestre.html">|   Terrestre   |</a></li>
+        <li class="nav-item ms-3">
+          <a class="btn btn-danger" href="pedroinscrição.html">Inscrição</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+    .card {
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: pointer;
+      border: none;}
+    .card:hover {
+      transform: scale(1.08);
+      box-shadow: 0 15px 35px rgba(255, 0, 0, 0.5);
+      z-index: 10;}
+  </style>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    .card-text {
+      display: none;
+    }
+  </style>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+.card-text{
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+
+  $(".mostrar").click(function(){
+    $(this).closest(".card").find(".card-text").show(800);
+  });
+
+  $(".ocultar").click(function(){
+    $(this).closest(".card").find(".card-text").hide(800);
+  });
+
+});
+</script>
+
+</body>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="accelo.webp" class="card-img-top" alt="uno.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Mercedes-Benz Accelo 1016 2022 </h5>
+        <p class="card-text">Sucessor da lendária "710", o Accelo 1016 2022 é o caminhão leve de maior sucesso da Mercedes no Brasil. Extremamente ágil em centros urbanos (VUC), ele une robustez de carga com a facilidade de dirigir um automóvel. Seu motor OM 924 LA de 156 cv e 62,2 kgfm de torque é um verdadeiro "tanque de guerra" para o dia a dia.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/x5ubSEprxsA"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 320.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="delivery.webp" class="card-img-top" alt="celta.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Volkswagen Delivery 11.180 2023</h5>
+        <p class="card-text">Referência em robustez, o 11.180 2023 combina o conforto de uma caminhonete com a força de um caminhão pesado. Equipado com o motor Cummins ISF 3.8 de 175 cv e torque de 61,2 kgfm, ele é extremamente ágil em entregas urbanas e valente em trajetos rodoviários curtos.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+         <a href="https://youtu.be/zcIGdruu7Hg"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 390.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="cargo.webp" class="card-img-top" alt="gol">
+      <div class="card-body">
+        <h5 class="card-title">Ford Cargo 1119 2021</h5>
+        <p class="card-text">Reconhecido como o caminhão leve mais potente do mercado, o Cargo 1119 2021 encerrou sua trajetória como uma lenda de performance. Equipado com o motor Cummins ISF 4.5 de 189 cv e torque bruto de 61,2 kgfm, ele supera a concorrência em subidas e retomadas, mesmo com carga máxima.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+         <a href="https://youtu.be/G8wShyqMgbw"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 260.000,00 </a>
+       </small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="volvo.webp" class="card-img-top" alt="uno.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Volvo FH 54 2023 </h5>
+        <p class="card-text">Líder absoluto de mercado, o FH 540 2023 é o sonho de consumo de transportadores e autônomos. Equipado com o motor D13 de 540 cv e torque bruto de 265 kgfm, ele vence subidas com facilidade mesmo em composições pesadas como bitrens e rodotrens.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+         <a href="https://youtu.be/y1jMPbzo76k"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 800.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="scania.webp" class="card-img-top" alt="celta.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Scania R450 2022</h5>
+        <p class="card-text">Referência em eficiência, o R450 2022 consolidou-se como o equilíbrio perfeito entre potência e baixo consumo. Equipado com o motor DC13 de 450 cv e torque de 240 kgfm, ele é ideal para carregar bitrens com agilidade e o menor custo por quilômetro rodado da categoria.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+         <a href="https://youtu.be/vAJgUeIjKWE"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 650.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="actroz.webp" class="card-img-top" alt="gol">
+      <div class="card-body">
+        <h5 class="card-title">Mercedes-Benz Actros 2651 2023 </h5>
+        <p class="card-text">Referência em inovação, o Actros 2651 2023 destaca-se por ser um dos caminhões mais tecnológicos das estradas brasileiras. Equipado com o motor OM 460 LA de 510 cv e torque de 245 kgfm, ele entrega força bruta com uma suavidade de condução comparável a um automóvel de luxo.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+         <a href="https://youtu.be/OpypNKHBSA0"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 700.000,00 </a>
+       </small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="scania2.webp" class="card-img-top" alt="uno.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Scania 770S V8 2023 </h5>
+        <p class="card-text">O 770S 2023 é o topo da cadeia alimentar dos pesados. Equipado com o icônico motor V8 de 16 litros, ele entrega brutais 770 cv e um torque avassalador de 377 kgfm. É a máquina definitiva para puxar composições gigantescas, como rodotrens de 9 eixos, com uma facilidade que nenhum outro caminhão consegue replicar.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/FW-Cil5ay5c"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 1.500.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="volvo2.webp" class="card-img-top" alt="celta.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Volvo FH16 750 2022</h5>
+        <p class="card-text">Referência global em potência bruta, o FH16 750 utiliza o massivo motor D16 de 16 litros, entregando impressionantes 750 cv e um torque colossal de 362 kgfm. É o caminhão projetado para carregar centenas de toneladas com a mesma facilidade que um caminhão comum carrega uma carga leve.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/XZt4MYL2aWo"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 1.000.000,00 </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="americano.webp" class="card-img-top" alt="gol">
+      <div class="card-body">
+        <h5 class="card-title">Kenworth W900 2018</h5>
+        <p class="card-text">Referência em durabilidade, o W900 2018 é o caminhão preferido de quem valoriza o estilo "raiz" e a customização. Equipado com motores PACCAR MX-13 ou Cummins X15, ele pode entregar até 605 cv e torque de 283 kgfm, garantindo força bruta com um ronco inconfundível.</p>
+        <button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+        <button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+        <a href="https://youtu.be/MEHW0PQ0vPk"target="_blank"class="btn btn-danger btn-sm ms-3">Assistir Vídeo</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">
+          <a class="btn btn-danger btn-sm ms-3" href="compra.html">R$ 800.000,00 </a>
+       </small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>

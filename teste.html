@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Street</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<link rel="icon" href="logocarro1.png">
+
+<style>
+
+body{
+  background:black;
+  color:white;
+}
+
+.card{
+  transition:.35s;
+  cursor:pointer;
+  border:none;
+}
+
+.card:hover{
+  transform:scale(1.08);
+  box-shadow:0 15px 35px rgba(255,0,0,.5);
+  z-index:10;
+}
+
+.card-text{
+  display:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-black border-bottom border-danger">
+<div class="container">
+<a class="navbar-brand text-danger fw-bold" href="#">
+<img src="logocarro1.png" height="90">
+</a>
+</div>
+</nav>
+
+<!-- FILTRO -->
+<div class="container my-4 text-center">
+
+<h4 class="text-danger">Filtrar por preço</h4>
+
+<select id="filtroPreco" class="form-select w-50 mx-auto">
+<option value="todos">Todos os preços</option>
+<option value="30000">Até R$ 30.000</option>
+<option value="60000">Até R$ 60.000</option>
+<option value="100000">Até R$ 100.000</option>
+<option value="500000">Até R$ 500.000</option>
+<option value="1000000">Até R$ 1.000.000</option>
+<option value="999999999">Acima de R$ 1.000.000</option>
+</select>
+
+</div>
+
+<!-- CARROS -->
+<div class="container">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+
+<!-- UNO -->
+<div class="col">
+<div class="card h-100" data-preco="27000">
+<img src="uno.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Fiat Uno Mille 2013</h5>
+<p class="card-text">
+Carro econômico e resistente com motor 1.0 Fire Flex.
+</p>
+
+<button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+<button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+</div>
+
+<div class="card-footer">
+<a class="btn btn-danger btn-sm">R$ 27.000,00</a>
+</div>
+</div>
+</div>
+
+<!-- CELTA -->
+<div class="col">
+<div class="card h-100" data-preco="26000">
+<img src="celta.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Chevrolet Celta 2012</h5>
+<p class="card-text">
+Ágil, econômico e manutenção barata.
+</p>
+
+<button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+<button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+</div>
+
+<div class="card-footer">
+<a class="btn btn-danger btn-sm">R$ 26.000,00</a>
+</div>
+</div>
+</div>
+
+<!-- GOL -->
+<div class="col">
+<div class="card h-100" data-preco="50000">
+<img src="gol.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Volkswagen Gol 2019</h5>
+<p class="card-text">
+Suspensão sólida e ótima revenda.
+</p>
+
+<button class="btn btn-danger btn-sm mostrar">Mostrar</button>
+<button class="btn btn-secondary btn-sm ocultar">Ocultar</button>
+</div>
+
+<div class="card-footer">
+<a class="btn btn-danger btn-sm">R$ 50.000,00</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+
+$(document).ready(function(){
+
+// MOSTRAR
+$(".mostrar").click(function(){
+$(this).closest(".card")
+.find(".card-text")
+.stop(true,true)
+.slideDown(400);
+});
+
+// OCULTAR
+$(".ocultar").click(function(){
+$(this).closest(".card")
+.find(".card-text")
+.stop(true,true)
+.slideUp(400);
+});
+
+// FILTRO PREÇO
+$("#filtroPreco").change(function(){
+
+let valor = $(this).val();
+
+$(".col").each(function(){
+
+let preco = $(this).find(".card").data("preco");
+
+if(valor==="todos" || preco <= valor){
+$(this).fadeIn(400);
+}else{
+$(this).fadeOut(400);
+}
+
+});
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
